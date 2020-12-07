@@ -18,13 +18,8 @@ def translate(value, leftMin, leftMax, rightMin, rightMax):
     return rightMin + (valueScaled * rightSpan)
 
 print(len(dnaSequence))
-dnaSequence = dnaSequence.replace("\n", "")
-print(len(dnaSequence))
 res = [translate(i, 0, len(dnaSequence), 0, 5.94) for i in range(len(dnaSequence)) if dnaSequence.startswith(searchSequence, i)]
-print(str(res))
-
-
-print(translate(30000, 0, len(dnaSequence), 0, 5.94))    
+print(str(res))   
 
 resnp = np.asarray(res)
   
