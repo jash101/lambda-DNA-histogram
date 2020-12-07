@@ -4,7 +4,7 @@ import numpy as np
 with open('DNAinput.txt', 'r') as file:
     dnaSequence = file.read().replace('\n', '')
 
-searchSequence = "GG"
+searchSequence = input("Enter sequence(E.g. \"GG\"): ")
 
 def translate(value, leftMin, leftMax, rightMin, rightMax):
     # Figure out how 'wide' each range is
